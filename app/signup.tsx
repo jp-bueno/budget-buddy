@@ -22,15 +22,16 @@ const Signup = () => {
 
   const onSignup = async () => {
     const fullPhoneNumber = `${countryCode}${phoneNumber}`
-    router.push({pathname: '/verify/[phone]', params: {phone: fullPhoneNumber}})
-    // try {
-    //   await signUp!.create({
-    //     phoneNumber: fullPhoneNumber
-    //   })
-    //   router.push({pathname: '/verify/[phone]', params: {phone: fullPhoneNumber}})
-    // } catch (err) {
-    //   console.error('Error signing up: ', err)
-    // }
+    try {
+      await signUp!.create({
+        phoneNumber: fullPhoneNumber
+      })
+      signUp!.preparePhoneNumberVerification();
+      
+      router.push({pathname: '/verify/[phone]', params: {phone: fullPhoneNumber}})
+    } catch (err) {
+      console.error('Error signing up: ', err)
+    }
   };
   return (
     <KeyboardAvoidingView

@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, Platform } from "react-native";
+import { View, Text, StyleSheet, Platform, Alert } from "react-native";
 import React, { Fragment, useEffect, useState } from "react";
 import { Link, useLocalSearchParams } from "expo-router";
-import { useSignIn, useSignUp } from "@clerk/clerk-expo";
+import { isClerkAPIResponseError, useSignIn, useSignUp } from "@clerk/clerk-expo";
 import { defaultStyles } from "@/constants/Styles";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import {
@@ -38,9 +38,38 @@ const Page = () => {
     }
   }, [code]);
 
-  const verifyCode = async () => {};
+  const verifyCode = async () => {
+    try {
+      await signUp!.attemptPhoneNumberVerification({
+        code
+      })
+      await setActive!({session: signUp!.createdSessionId})
+    }catch (err) {
+      console.log('error', JSON.stringify(err, null, 2))
+      if(isClerkAPIResponseError(err)) {
+        if(err.errors[0].code === 'form_identifier_not_found') {
+          Alert.alert('Error', err.errors[0].message)
+        }
+      }
+    }
+  };
 
-  const verifySignIn = async () => {};
+  const verifySignIn = async () => {
+    try {
+      await signIn!.attemptFirstFactor({
+        strategy: 'phone_code',
+        code
+      })
+      await setActive!({session: signIn!.createdSessionId})
+    }catch (err) {
+      console.log('error', JSON.stringify(err, null, 2))
+      if(isClerkAPIResponseError(err)) {
+        if(err.errors[0].code === 'form_identifier_not_found') {
+          Alert.alert('Error', err.errors[0].message)
+        }
+      }
+    }
+  };
 
   return (
     <View style={defaultStyles.container}>
