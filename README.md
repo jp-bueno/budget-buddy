@@ -1,50 +1,28 @@
-# React Native FinTech Clone with Clerk
+# README - Aplicativo de Gestão Financeira
+### Introdução
+Este artigo apresenta o desenvolvimento de um aplicativo móvel voltado para a área de finanças pessoais. O objetivo principal é oferecer uma solução eficaz e de fácil uso para os usuários, suprindo a limitação de recursos encontrada na maioria dos aplicativos existentes, os quais geralmente são restritos a assinantes.
 
-This is a React Native FinTech clone using [Clerk](https://go.clerk.com/tQXLCe8) for user authentication with OTP. This app was inspired by the [Revolut](https://www.revolut.com/) app.
+### Motivação
+O gerenciamento eficaz das finanças pessoais é um desafio para muitas pessoas, exigindo tempo e esforço consideráveis. O uso de aplicativos móveis pode facilitar esse processo e torná-lo mais acessível a todos. Além disso, a demanda por soluções digitais nessa área está em ascensão.
 
-Additional features:
+### Desenvolvimento
+O desenvolvimento do aplicativo envolve a aplicação de conhecimentos sobre educação financeira, identificação das necessidades do mercado e análise dos concorrentes para encontrar oportunidades de melhoria. A pesquisa exploratória é conduzida por meio de entrevistas com potenciais usuários e análise de aplicativos concorrentes, além do uso de material bibliográfico de apoio.
 
-- [Expo Router](https://docs.expo.dev/routing/introduction/) file-based navigation and API Routes
-- [SMS OTP](https://clerk.com/docs/custom-flows/email-sms-otp?utm_source=sponsorship&utm_medium=github&utm_campaign=simong&utm_content=rn-fintech) Auth with Clerk
-- [Reanimated](https://docs.swmansion.com/react-native-reanimated/) 3 for animations
-- [Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) for gestures
-- [Zustand](https://zustand-demo.pmnd.rs/) and [MMKV](https://github.com/mrousavy/react-native-mmkv) for state management
-- [Victory Native XL](https://commerce.nearform.com/open-source/victory-native) for charts
-- [Zeego](https://zeego.dev/start) for native menus
-- [CoinMarketCap API](https://coinmarketcap.com/api/documentation/v1/) for crypto prices
+### Requisitos
+Será realizado um levantamento de requisitos funcionais e não funcionais, seguido pelo desenvolvimento do aplicativo com base nos diagramas de engenharia de software.
 
-## Screenshots
+### Testes
+O teste do aplicativo será realizado para garantir sua funcionalidade e qualidade, assegurando que atenda às necessidades dos usuários de forma eficaz e confiável.
 
-<div style="display: flex; flex-direction: 'row';">
-<img src="./screenshots/1.png" width=20%>
-<img src="./screenshots/2.png" width=20%>
-<img src="./screenshots/3.png" width=20%>
-<img src="./screenshots/4.png" width=20%>
-<img src="./screenshots/5.png" width=20%>
-<img src="./screenshots/6.png" width=20%>
-<img src="./screenshots/7.png" width=20%>
-<img src="./screenshots/8.png" width=20%>
-<img src="./screenshots/9.png" width=20%>
-<img src="./screenshots/10.png" width=20%>
-<img src="./screenshots/11.png" width=20%>
+### Resultado Esperado
+O resultado esperado é um aplicativo de gerenciamento de finanças pessoais fácil de usar, confiável e seguro, que ajude os usuários a melhorar sua saúde financeira.
 
-</div>
+### Palavras-Chave
+* Finanças
+* Gestão
+* Aplicativo
 
-## Demo
 
-<div style="display: flex; flex-direction: 'row';">
-<img src="./screenshots/login.gif" width=30%>
-<img src="./screenshots/state.gif" width=30%>
-<img src="./screenshots/lockscreen.gif" width=30%>
-<img src="./screenshots/charts.gif" width=30%>
-<img src="./screenshots/icon.gif" width=30%>
-
-</div>
-
-## 🚀 More
-
-**Take a shortcut from web developer to mobile development fluency with guided learning**
-
-Enjoyed this project? Learn to use React Native to build production-ready, native mobile apps for both iOS and Android based on your existing web development skills.
-
-<a href="https://galaxies.dev"><img src="banner.png" height="auto" width="100%"></a>
+![home-page](https://github.com/user-attachments/assets/567f0821-0cfb-4907-92ab-650b2f2c76d2)
+![login-page](https://github.com/user-attachments/assets/ff4dc32b-1527-406d-9830-413b672d05b4)
+![signup-page](https://github.com/user-attachments/assets/0244f56d-c06b-4e08-9a9b-ab30aa7bdb28)
