@@ -23,7 +23,7 @@ const Page = () => {
         <RoundBtn icon={'add'} text={'Add money'} onPress={onAddMoney}/>
         <RoundBtn icon={'refresh'} text={'Exchange'}/>
         <RoundBtn icon={'list'} text={'Details'}/>
-        <Dropdown/>
+        {/* <Dropdown/> */}
       </View>
     </ScrollView>
   )

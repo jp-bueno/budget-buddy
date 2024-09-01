@@ -8,7 +8,7 @@ const Dropdown = () => {
         <RoundBtn icon={"ellipsis-horizontal"} text={"More"} />
       </DropdownMenu.Trigger>
 
-      <DropdownMenu.Content>
+      {/* <DropdownMenu.Content>
         <DropdownMenu.Item key="statement">
           <DropdownMenu.ItemTitle>Statement</DropdownMenu.ItemTitle>
           <DropdownMenu.ItemIcon
@@ -48,7 +48,7 @@ const Dropdown = () => {
             }}
           ></DropdownMenu.ItemIcon>
         </DropdownMenu.Item>
-      </DropdownMenu.Content>
+      </DropdownMenu.Content> */}
     </DropdownMenu.Root>
   );
 };
